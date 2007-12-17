@@ -10,7 +10,6 @@ Release:	%{release}
 Source:		%{name}-%{version}.tar.bz2
 License:	GPL
 Group:		System/Kernel and hardware
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 Url:		http://www.mandrivalinux.com/cgi-bin/cvsweb.cgi/soft/bootsplash/
 Requires:	bootsplash
 Requires:	mandriva-theme
