@@ -1,6 +1,6 @@
 %define name bootsplash-themes
 %define version 2.1.0
-%define release %mkrel 5
+%define release %mkrel 6
 %define scriptdir %{_datadir}/bootsplash/scripts/
 
 Summary:	Bootsplash themes
