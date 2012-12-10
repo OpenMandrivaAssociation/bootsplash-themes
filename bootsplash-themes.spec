@@ -145,3 +145,40 @@ rm -rf $RPM_BUILD_ROOT
 %config(noreplace) %_sysconfdir/bootsplash/themes/Ayo-Misspingus4-tux/*
 
 
+
+
+%changelog
+* Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 2.1.0-7mdv2011.0
++ Revision: 616812
+- the mass rebuild of 2010.0 packages
+
+* Wed Sep 02 2009 Thierry Vignaud <tv@mandriva.org> 2.1.0-6mdv2010.0
++ Revision: 424686
+- rebuild
+
+* Tue Jul 22 2008 Thierry Vignaud <tv@mandriva.org> 2.1.0-5mdv2009.0
++ Revision: 240449
+- rebuild
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Fri Aug 17 2007 Thierry Vignaud <tv@mandriva.org> 2.1.0-3mdv2008.0
++ Revision: 64788
+- rebuild
+
+
+* Tue Mar 06 2007 Olivier Blin <oblin@mandriva.com> 2.1.0-2mdv2007.0
++ Revision: 133609
+- remove themes containing the Mandrake name
+- Import bootsplash-themes
+
+* Sat Aug 13 2005 Olivier Blin <oblin@mandriva.com> 2.1.0-1mdk
+- switch to Mandriva
+- misc Makefile cleanups
+- remove Prefix tag
+
+* Thu Feb 10 2005 Olivier Blin <oblin@mandrakesoft.com> 2.0.0-11mdk
+- Mandrake theme is now called Mandrakelinux
+
