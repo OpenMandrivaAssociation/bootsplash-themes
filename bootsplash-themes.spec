@@ -1,16 +1,12 @@
-%define name bootsplash-themes
-%define version 2.1.0
-%define release 8
 %define scriptdir %{_datadir}/bootsplash/scripts/
 
 Summary:	Bootsplash themes
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		bootsplash-themes
+Version:	2.1.0
+Release:	9
 Source:		%{name}-%{version}.tar.bz2
 License:	GPL
 Group:		System/Kernel and hardware
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 Url:		http://www.mandrivalinux.com/cgi-bin/cvsweb.cgi/soft/bootsplash/
 Requires:	bootsplash
 Requires:	mandriva-theme
@@ -30,14 +26,14 @@ Additional themes for bootsplash:
 "-tux" themes use Tux logo instead of theme picture in console
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
-make
+%make_build
 
 %install
-rm -rf $RPM_BUILD_ROOT
-%makeinstall_std
+%make_install
+
 rm -rf $RPM_BUILD_ROOT{%_sysconfdir,%_datadir}/bootsplash/themes/{RadiantStar,Enterprise{,-spot}}
 
 %post
@@ -53,10 +49,6 @@ if [ "$1" = "0" ]; then
     %scriptdir/switch-themes Mandriva
   fi
 fi
-
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 
 %files
 %defattr(-,root,root)
