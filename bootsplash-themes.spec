@@ -7,7 +7,7 @@ Release:	9
 Source:		%{name}-%{version}.tar.bz2
 License:	GPL
 Group:		System/Kernel and hardware
-Url:		http://www.mandrivalinux.com/cgi-bin/cvsweb.cgi/soft/bootsplash/
+Url:		https://www.mandrivalinux.com/cgi-bin/cvsweb.cgi/soft/bootsplash/
 Requires:	bootsplash
 Requires:	mandriva-theme
 
